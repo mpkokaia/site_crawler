@@ -4,7 +4,7 @@ from pymongo import MongoClient, errors
 class Storage:
     def __init__(self):
         client = MongoClient()
-        self.doc = client.test97.html_storage
+        self.doc = client.test.html_storage
 
     def insert(self, title="", root="", current_url="", html=""):
         try:
